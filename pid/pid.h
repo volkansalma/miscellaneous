@@ -22,10 +22,10 @@ typedef struct
 	float err_sum;
 }PID;
 
-void pid_init(PID* pid, float dt, float out_min, float out_max);
+void pid_init(PID *pid, float dt, float out_min, float out_max);
 
-void pid_set(PID* pid, float kp, float ki, float kd);
+void pid_set(PID *pid, float kp, float ki, float kd);
 
-float pid_calc(PID* pid, float set_point, float feedback);
+float pid_calc(PID *pid, float set_point, float feedback);
 
 #endif

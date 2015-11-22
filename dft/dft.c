@@ -11,8 +11,8 @@
 /*
   Discrete Fourier Transform
 */
-void dft(const float* samples, const int sample_size,
-		 float* ret_reel_coeffs, float* ret_img_coeffs)
+void dft(const float *samples, const int sample_size,
+		 float *ret_reel_coeffs, float *ret_img_coeffs)
 {
 	float i, r;
 	int n, k;
@@ -34,8 +34,8 @@ void dft(const float* samples, const int sample_size,
 /*
   Inverse Discrete Fourier Transform
 */
-void inv_dft(const float* reel_coeffs, const float* img_coeffs, 
-			 const int sample_size, float* ret_reel_samples)
+void inv_dft(const float *reel_coeffs, const float *img_coeffs, 
+			 const int sample_size, float *ret_reel_samples)
 {
 	float r;
 	int n, k;

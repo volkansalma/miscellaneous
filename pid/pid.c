@@ -9,7 +9,7 @@
 /*
   Init the controller with setting sampling time and output limits
 */
-void pid_init(PID* pid, float dt, float out_min, float out_max)
+void pid_init(PID *pid, float dt, float out_min, float out_max)
 {
 	pid->dt = dt;
 	pid->out_min = out_min;
@@ -19,7 +19,7 @@ void pid_init(PID* pid, float dt, float out_min, float out_max)
 /*
   Set controller coefficients
 */
-void pid_set(PID* pid, float kp, float ki, float kd)
+void pid_set(PID *pid, float kp, float ki, float kd)
 {
    pid->kp = kp;
    pid->ki = ki;
@@ -29,7 +29,7 @@ void pid_set(PID* pid, float kp, float ki, float kd)
 /*
   PID output calculation according to feedback
 */
-float pid_calc(PID* pid, float set_point, float feedback)
+float pid_calc(PID *pid, float set_point, float feedback)
 { 
 	float err;
 	float d_err;
@@ -64,4 +64,3 @@ float pid_calc(PID* pid, float set_point, float feedback)
     
     return output;
 }
-
